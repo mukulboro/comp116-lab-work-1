@@ -36,11 +36,11 @@ class Statistcs{
 int main(){
     double inputArray[MAX];
     for(int i=0; i<MAX; i++){
-        std::cout<<"Enter number in index "<<i<<std::endl;
+        std::cout<<"Enter number in index "<<i<<" :";
         std::cin>>inputArray[i];
     }
     Statistcs stat = Statistcs(inputArray);
     std::cout<<"Mean: "<<stat.GetMean()<<std::endl;
-    std::cout<<"Mean: "<<stat.GetSD()<<std::endl;
+    std::cout<<"SD: "<<stat.GetSD()<<std::endl;
     return 0;
 }
